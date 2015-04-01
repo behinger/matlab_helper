@@ -1,0 +1,5 @@
+function [] = p2_print_quick
+str = get(gcf,'name');
+print(gcf,sprintf('/net/store/nbp/popout2.new/MEG_analysis/analysis/coherency/plots/%s_%s.jpg',datestr(now),str),'-djpeg','-r400')
+
+
